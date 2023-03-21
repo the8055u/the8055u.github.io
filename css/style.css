@@ -1,0 +1,55 @@
+/* Set body styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Set splash styles */
+.splash {
+  font-family: 'Noto Sans', sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+}
+
+.splash.fade-out {
+  opacity: 0;
+}
+
+.splash h1 {
+  font-family: 'Noto Sans', sans-serif;
+  animation: scale 1s ease-in-out infinite alternate;
+}
+
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+/* Set content styles */
+.content {
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content > .inner-content {
+  text-align: center;
+}
+
+.content > .inner-content p {
+  margin: 0;
+  padding: 0;
+}
